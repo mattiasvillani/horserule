@@ -14,15 +14,15 @@ The paper is available on arXiv: https://arxiv.org/abs/1702.05008
 
 Here is an example of how to use the basics of the horserule package to analyze the famous Boston housing data.
 
-library(horserule)
-data(Boston)
+    library(horserule)
+    data(Boston)
 
-N = nrow(Boston)
-train = sample(1:N, 500)
-Xtrain = Boston[train,-14]
-ytrain = Boston[train, 14]
-Xtest = Boston[-train, -14]
-ytest = Boston[-train, 14]
+    N = nrow(Boston)
+    train = sample(1:N, 500)
+    Xtrain = Boston[train,-14]
+    ytrain = Boston[train, 14]
+    Xtest = Boston[-train, -14]
+    ytest = Boston[-train, 14]
 
 # Main function call (variable scaling performed internally)
 hrres = HorseRuleFit(X=Xtrain, y=ytrain,
