@@ -2,7 +2,7 @@
 
 The model is described in the paper:
 
-Tree Ensembles with Rule Structured Horseshoe Regularization
+*Tree Ensembles with Rule Structured Horseshoe Regularization*
 
 by Malte Nalenz and <a href="http://mattiasvillani.com">Mattias Villani</a>
 
@@ -10,6 +10,7 @@ by Malte Nalenz and <a href="http://mattiasvillani.com">Mattias Villani</a>
 
 The paper is available on arXiv: https://arxiv.org/abs/1702.05008
 
+# Example code
 
 Here is an example of how to use the basics of the horserule package to analyze the famous Boston housing data.
 
