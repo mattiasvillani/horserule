@@ -10,6 +10,8 @@ by Malte Nalenz and <a href="http://mattiasvillani.com">Mattias Villani</a>
 
 The paper is available on arXiv: https://arxiv.org/abs/1702.05008
 
+The datasets used in the paper (which are not supplied by R) is included in the folder datasets.
+
 # Example code
 
 Here is an example of how to use the basics of the horserule package to analyze the famous Boston housing data.
