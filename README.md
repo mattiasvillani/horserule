@@ -14,9 +14,11 @@ The paper is available on arXiv: https://arxiv.org/abs/1702.05008
 
 Here is an example of how to use the basics of the horserule package to analyze the famous Boston housing data.
 
+    # Loading the library, reading the data
     library(horserule)
     data(Boston)
 
+    # Training/Testing split of the data
     N = nrow(Boston)
     train = sample(1:N, 500)
     Xtrain = Boston[train,-14]
