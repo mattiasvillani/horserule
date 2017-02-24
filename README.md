@@ -24,8 +24,8 @@ Here is an example of how to use the basics of the horserule package to analyze 
     Xtest = Boston[-train, -14]
     ytest = Boston[-train, 14]
 
-# Main function call (variable scaling performed internally)
-hrres = HorseRuleFit(X=Xtrain, y=ytrain,
+    # Main function call (variable scaling performed internally)
+    hrres = HorseRuleFit(X=Xtrain, y=ytrain,
 		# MCMC settings
 		thin=1, niter=1000, burnin=100,
 		# Parameters for the rule generation process
@@ -35,15 +35,15 @@ hrres = HorseRuleFit(X=Xtrain, y=ytrain,
 		# Hyperparameters for the rule structured prior
 		alpha=1, beta=2, linp = 1, restricted = 0)
 
-# Check model performance by predicting holdout cases
-pred = predict(hrres, Xtest)
-sqrt(mean((pred-ytest)^2)))
+    # Check model performance by predicting holdout cases
+    pred = predict(hrres, Xtest)
+    sqrt(mean((pred-ytest)^2)))
 
-# Find most important rules
-importance_hs(hrres)
+    # Find most important rules
+    importance_hs(hrres)
 
-# Compute variable importance
-variable_importance(hrres)
+	# Compute variable importance
+	variable_importance(hrres)
 
-# Monitor the complexity of the rules
-complexity_plot(hrres)
+	# Monitor the complexity of the rules
+	complexity_plot(hrres)
