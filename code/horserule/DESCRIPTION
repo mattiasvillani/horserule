@@ -1,0 +1,15 @@
+Package: horserule
+Type: Package
+Title: Flexible non-linear regression with the HorseRule algorithm
+Version: 0.1.0
+Date: 19.02.2017
+Author: Malte Nalenz <malte.nlz@googlemail.com>
+Maintainer: Malte Nalenz <malte.nlz@googlemail.com>
+Description: HorseRule, flexible tree based, bayesian regression method for linear and non-linear regression and classification. Includes the learning algorithm, prediction tools and graphical tools that help understand complex high-dimensional data sets.
+Imports: mvnfast, MASS, randomForest, gbm, inTrees, ggplot2,
+        BayesLogit, grDevices, RColorBrewer
+License: GPL-3
+LazyData: TRUE
+RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2017-02-19 21:52:12 UTC; malte_000
